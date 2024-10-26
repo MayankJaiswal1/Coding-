@@ -15,7 +15,7 @@ public class ReverseNo {
     static int rev(int num){
         int var = 0;
         while(num>0){
-            var = var*10 + num%10;
+            var = var*10 + num%10;  // rev = num%10;    var = var*10+rev;
             num/=10;
         }
         return var;
