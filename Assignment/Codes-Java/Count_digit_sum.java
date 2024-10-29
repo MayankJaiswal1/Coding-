@@ -48,7 +48,9 @@ class Count_digit_sum{
             num/=10;
             sum+=rem;
         }
+
         System.out.println(sum);
+        
         int temp = sum;
         int count = 0;
         //for(int i = 1; i<=sum; i++){
