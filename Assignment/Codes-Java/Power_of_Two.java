@@ -7,7 +7,7 @@ public class Power_of_Two {
         }
 
         System.out.println(isPowerOfTwo_2(16) ? "Yes" : "No");
-        //System.out.println(isPowerOfTwo_3(64) ? "Yes" : "No");
+        System.out.println(isPowerOfTwo_3(64) ? "Yes" : "No");
     }
 
     static boolean isPowerOfTwo(int n){
@@ -31,5 +31,7 @@ public class Power_of_Two {
         return true;
     }
 
-    
+    static boolean isPowerOfTwo_3(int x){
+        return x!=0 && ((x & (x-1)) == 0);
+    }
 }
