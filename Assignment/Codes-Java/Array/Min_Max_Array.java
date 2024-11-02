@@ -36,12 +36,7 @@
 
 
 package Array;
-
 import java.util.Arrays;
-
-/**
- *  Pair
- */ 
  
 class Pair {
     public int min;
