@@ -40,17 +40,28 @@
 
 package String;
 
+import java.util.StringTokenizer;
+
 public class word_count {
     public static void main(String[] args) {
         String str = "Hi ISR is a field of IR callesd ISR";
-        System.out.println("No. of words: " + countwords(str));
+        System.out.println("No. of words: " + countwords_II(str));
+        System.out.println("No. of words: " + countwords_III(str));
     }
     
-    static int countwords(String str){
+    static int countwords_II(String str){
         if ( str == null || str.isEmpty())
             return 0;
         
     String[] words = str.split("\\s+");  
     return words.length;
+    }
+
+    static int countwords_III(String str){
+        if ( str == null || str.isEmpty())
+            return 0;
+        
+    StringTokenizer tokens = new StringTokenizer(str);  
+    return tokens.countTokens();
     }
 }
