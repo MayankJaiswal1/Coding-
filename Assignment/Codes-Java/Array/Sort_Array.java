@@ -6,6 +6,7 @@ public class Sort_Array {
     public static void main(String[] args) {
         int arr[] = {64, 34, 25, 12, 22, 11, 90};
         sortArray(arr);
+        sortArray_II(arr);
         System.out.println("Sorted Array: " + Arrays.toString(arr));
     }
 
@@ -24,5 +25,10 @@ public class Sort_Array {
             if(!swapped)
             break;
         }
+    }
+
+    static void sortArray_II(int[] arr){
+        Arrays.sort(arr);
+        System.out.println(arr);
     }
 }
