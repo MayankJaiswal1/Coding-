@@ -29,6 +29,6 @@ public class Sort_Array {
 
     static void sortArray_II(int[] arr){
         Arrays.sort(arr);
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
