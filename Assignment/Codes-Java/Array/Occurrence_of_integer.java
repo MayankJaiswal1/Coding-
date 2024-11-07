@@ -6,6 +6,12 @@ public class Occurrence_of_integer {
         int n = arr.length;
         int x = 5;
         System.out.println(countOccurrences(arr, n, x));
+        int count = 0;
+        for(int i=0; i<n; i++){
+            if(x == arr[i])
+                count++;
+        }
+        System.out.println(count + ".");
     }
 
     static int countOccurrences(int arr[], int n, int x){
