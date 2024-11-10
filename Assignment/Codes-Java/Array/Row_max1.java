@@ -5,7 +5,7 @@ package Array;
 
 public class Row_max1 {
     static int R = 4;
-    static int c = 4;
+    static int C = 4;
 
     static int rowWithMax1s(int mat[][], int R, int C){
         // Flag to check if there is not even a single 1 in the matrix.
@@ -31,12 +31,27 @@ public class Row_max1 {
         return max_row_index;
     }
 
+    static int rowWithMax1s(int[][] mat){
+        int maxRow = -1, row =0, col = C-1;
+        while(row<R && col >= 0){
+            if(mat[row][col] == 0){
+                row++;
+            }
+            else{
+                maxRow = row;
+                col--;
+            }
+        }
+        return maxRow;
+    }
+
     public static void main(String[] args) {
         int mat[][] = { {0,0,0,1},
                         {0,0,0,0},
                         {1,1,1,1},
                         {1,1,1,1}};
-        System.out.println("Index of row with matrix 1s is " + rowWithMax1s(mat, R, c));                
+        System.out.println("Index of row with matrix 1s is " + rowWithMax1s(mat, R, C));             
+        System.out.println("Index of row with maximum 1s is " + rowWithMax1s(mat));   
     }
     
 }
