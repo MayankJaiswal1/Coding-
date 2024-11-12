@@ -32,6 +32,16 @@ public class Wave_array {
         for(int i=0; i<n-1; i+=2){
             swap(arr, i, i+1);
         }
+
+        //0r
+        // Traverse all even elements
+        for(int i=0; i<n; i+=2){
+            //swap odd and even positions
+            if(i>0 && arr[i-1]>arr[i])
+                swap(arr,i,i-1);
+                if(i<n-1 && arr[i+1]>arr[i])
+                swap(arr, n, i);
+        }
     }
 
      // A utility method to swap two numbers.
