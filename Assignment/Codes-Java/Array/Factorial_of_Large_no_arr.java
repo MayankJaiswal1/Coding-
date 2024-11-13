@@ -3,6 +3,8 @@ package Array;
 public class Factorial_of_Large_no_arr {
     public static void main(String[] args) {
         factorial(100);
+        System.out.println(" ");
+        factorial(50);
     }
 
     static void factorial(int n){
