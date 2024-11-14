@@ -18,7 +18,8 @@ package Array;
 
 public class Peak_element_array {
     public static void main(String[] args) {
-        int arr[] = {1,2,3,20,4,1,0};
+        int arr1[] = {1,2,3,20,4,1,0};
+        int arr[] = {10,2,30,20,4,1,0};
         int n = arr.length;
         System.out.println("Index of a peak point is " + findpeak(arr,n));
     }
