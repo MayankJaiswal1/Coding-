@@ -14,7 +14,7 @@ package Array;
 public class array_subset {
     public static void main(String[] args) {
         int arr1[] = {11,1,13,21,3,7};
-        int arr2[] = {11,3,7,1};
+        int arr2[] = {11,3,5,1};
         int m = arr1.length;
         int n = arr2.length;
         if(isSubset(arr1, arr2, m, n)){
