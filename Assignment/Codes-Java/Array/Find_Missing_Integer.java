@@ -2,7 +2,7 @@ package Array;
 
 public class Find_Missing_Integer {
     public static void main(String[] args) {
-        int arr[] = {1,2,3,5};
+        int arr[] = {1,2,3,5,23};
         int n = 5;
         System.out.println(missingNumber(n,arr));
     }
