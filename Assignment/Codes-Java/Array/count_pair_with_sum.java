@@ -15,11 +15,15 @@ Output:  0
 
 package Array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class count_pair_with_sum {
     public static void main(String[] args) {
         int arr[] = {1,5,7,-1,5};
         int target = 6;
         System.out.println(countPairs(arr, target));
+        System.out.println(countPairs_II(arr, target));
     }
 
     static int countPairs(int arr[], int target){
@@ -31,6 +35,18 @@ public class count_pair_with_sum {
                     count++;
                 }
             }
+        }
+        return count;
+    }
+
+    static int countPairs_II(int arr[], int target){
+        Map<Integer, Integer> freq = new HashMap<>();
+        int count = 0;
+        for(int i=0; i<arr.length; i++){
+            if(freq.containsKey((target - arr[i]))){
+                count += freq.get(target - arr[i]);
+            }
+            freq.put(arr[i], freq.getOrDefault(arr[i], 0) + 1);
         }
         return count;
     }
