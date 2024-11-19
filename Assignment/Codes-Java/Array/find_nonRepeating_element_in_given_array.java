@@ -12,7 +12,7 @@ package Array;
 
 public class find_nonRepeating_element_in_given_array {
     public static void main(String[] args) {
-        int arr[] = {9,6,4,9,6,7,4};
+        int arr[] = {9,6,4,9,6,7,4,7,5,5};
         int n = arr.length;
         System.out.print(firstNonRepeating(arr, n));
     }
