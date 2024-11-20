@@ -18,7 +18,7 @@ package Array;
 
 public class Subarrays_with_zero_sum {
     public static void main(String[] args) {
-        int arr[] = {-3,2,3,1,6};
+        int arr[] = {-3,2,3,1,6,0,5,1};
         int n = arr.length;
         if(subArrayExists(arr,n)){
             System.out.println("Found a subarray with 0 sum");
