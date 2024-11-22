@@ -12,7 +12,7 @@ Explanation: The subarray with maximum product is {60}.
 package Array;
 public class maximum_product_subarray {
     public static void main(String[] args) {
-        int arr[] = {-2, 6, -3, -10, 0, 2};
+        int arr[] = {-2, 6, -3, -10, 0, 2, 1, 5, 4, 3,10};
         System.out.println(maxProduct(arr));
     }
 
