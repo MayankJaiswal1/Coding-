@@ -15,7 +15,7 @@ import java.util.HashSet;
 
 public class longest_consecutive_subsequence {
     public static void main(String[] args) {
-        int arr[] = {1,9,3,10,4,20,2};
+        int arr[] = {1,9,3,10,4,20,2,15,8,7};
         int n = arr.length;
         System.out.println("Length of the longest consecutive subsequence is " + findLongestConseqSubseq(arr, n));
     }
