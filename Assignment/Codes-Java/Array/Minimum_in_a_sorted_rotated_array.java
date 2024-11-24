@@ -20,6 +20,8 @@ public class Minimum_in_a_sorted_rotated_array {
     public static void main(String[] args) {
         List<Integer> arr = Arrays.asList(5,6,1,2,3,4);
         System.out.println(findMin(arr));
+        int arr1[] = {5,6,1,2,3,4};
+        System.out.println(findMin_II(arr1));
     }
 
     static int findMin(List<Integer> arr) {
@@ -28,5 +30,21 @@ public class Minimum_in_a_sorted_rotated_array {
             res = Math.min(res, arr.get(i));
         }
         return res;
+    }
+
+    static int findMin_II(int arr1[]){
+        int low = 0, high = arr1.length -1;
+        while(low<high){
+            if(arr1[low] <= arr1[high]){
+                return arr1[low];
+            }
+            int mid = (low+high) / 2;
+            if(arr1[mid] > arr1[high]){
+                low  = mid + 1;
+            }else{
+                high = mid;
+            }
+        }
+        return arr1[low]; 
     }
 }
