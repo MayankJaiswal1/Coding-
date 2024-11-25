@@ -17,12 +17,16 @@ Explanation: Only one platform is needed.
 
 package Array;
 
+import java.util.Arrays;
+
 public class Minimum_platform {
     public static void main(String[] args) {
         int arr[] = {100, 300, 500};
         int dept[] = {900, 400, 600};
         int n = 3;
         System.out.println(findPlatform(arr, dept, n));
+        int m = arr.length;
+        System.out.println(findPlatform_II(arr, dept, m));
     }
 
     static int findPlatform(int arr[], int dept[], int n){
@@ -37,6 +41,26 @@ public class Minimum_platform {
                 }
             }
             result = Math.max(result, plat_needed);
+        }
+        return result;
+    }
+
+    static int findPlatform_II(int arr[], int dept[], int m){
+        Arrays.sort(arr);
+        Arrays.sort(dept);
+        int plat_needed = 1, result =1;
+        int i=1, j=0;
+        while(i<m && j<m){
+            if(arr[i] <= dept[j]){
+                plat_needed++;
+                i++;
+            }else if(arr[i] > dept[j]){
+                plat_needed--;
+                j++;
+            }
+            if(plat_needed > result){
+                result = plat_needed;
+            }
         }
         return result;
     }
