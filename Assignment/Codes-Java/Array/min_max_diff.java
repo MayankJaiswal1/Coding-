@@ -22,8 +22,8 @@ import java.util.Arrays;
 
 public class min_max_diff {
     public static void main(String[] args) {
-        int k = 6;
-        int []arr = {12,6,15,17,10};
+        int k = 5;
+        int []arr = {12,6,2,15,5,17,10,15};
         System.out.println(getminDiff(arr, k));
     }
 
