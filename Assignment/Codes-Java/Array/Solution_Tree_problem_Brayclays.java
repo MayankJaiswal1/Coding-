@@ -25,7 +25,7 @@ public class Solution_Tree_problem_Brayclays
 		}
 		boolean[] visited = new boolean[n+1];
 		int maxscore[] = new int[1];
-		maxscore[0] = 75;
+		maxscore[0] = 0;
 		dfs(1,tree,nodeVal,visited,maxscore);
 		return maxscore[0];
 	}
@@ -55,8 +55,6 @@ public class Solution_Tree_problem_Brayclays
 		return maxProduct*nodeVal[node-1];
 	}
 
-
-
 	public static void main(String[] args)
 	{
 		Scanner in = new Scanner(System.in);
@@ -84,3 +82,23 @@ public class Solution_Tree_problem_Brayclays
 		
 	}
 }
+
+/*
+ * Input 
+ * 4
+ * -1 2 3 2
+ * 3 2
+ * 1 2
+ * 1 3
+ * 3 4
+ * 
+ * o/p- -12
+ * 
+ * 
+ * Input 
+ * 1
+ * 5
+ * 0 2
+ * 
+ * o/p - 75
+ */
