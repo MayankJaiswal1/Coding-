@@ -38,7 +38,9 @@ public class calPrimeNo_Barclays {
                 primes.add(i);
             }
         }
-        int[] result = primes.stream().mapToInt(Integer::intValue).toArray();
-        return result;
+        //int[] result = primes.stream().mapToInt(Integer::intValue).toArray();
+        //return result;
+        
+        return primes.stream().mapToInt(Integer::intValue).toArray();
     }
 }
