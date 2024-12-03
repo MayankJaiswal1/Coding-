@@ -56,9 +56,9 @@ public class implement_two_stack_array {
             return x;
         }else{
             System.out.println("Stack Overflow");
-            System.exit(1);
+            //System.exit(1);
+            return -1;
         }
-        return 0;
     }
 
     int pop2(){
@@ -68,9 +68,9 @@ public class implement_two_stack_array {
             return x;
         }else{
             System.out.println("Stack Overflow");
-            System.exit(1);
+            //System.exit(1);
+            return -1;
         }
-        return 0;
     }
 
     public static void main(String[] args) {
