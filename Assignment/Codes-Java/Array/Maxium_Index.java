@@ -52,6 +52,7 @@ public class Maxium_Index {
         int N = 3; 
         int B = 2;
         System.out.println(max_reachabe_index(N, B));
+        System.out.println(max_reachabe_index_II(N, B));
     }
 
     static int max_reachabe_index(int N, int B){
@@ -61,5 +62,18 @@ public class Maxium_Index {
             }
         }
         return max_index;
+    }
+
+    static int max_reachabe_index_II(int N, int B){
+        int s = 0; // Initialize a variable 's' to keep track of the current sum.
+        for(int i=1; i<=N; i++){  // Loop through natural numbers from 1 to N.
+            s += i;    // Add the current number 'i' to the sum 's'.
+            if(s == B){   // If the sum 's' equals 'B', we found the answer.
+                //  Calculate the sum of natural numbers from 1 to N using the formula.
+                int sum_of_natural_nos = N*(N+1)/2;
+                return sum_of_natural_nos -1;   // Return N-1 as the maximum index.
+            }
+        }
+        return s;   // If we didn't find a match, return the current sum 's'.
     }
 }
