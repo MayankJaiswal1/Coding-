@@ -26,28 +26,39 @@ Start from the first element of ar2 which is 1, then move to 5, then 7. From 7 s
 package Array;
 
 public class maximum_sum_path_in_two_arrays {
+    // Driver code
     public static void main(String[] args) {
         maximum_sum_path_in_two_arrays sumpath = new maximum_sum_path_in_two_arrays();
         int arr1[] = {2,3,7,10,12,15,30,34};
         int arr2[] = {1,5,7,8,10,15,16,19};
         int m = arr1.length;
         int n = arr2.length;
+        // Function call
         System.out.println("Maximum Sum path is : " + sumpath.maxPathSum(arr1, arr2, m, n));
     }
 
+    // Utility function to find maximum of two integers
     int max(int x, int y){
         return (x > y) ? x:y; 
     }
 
+    // This function returns the sum of elements on maximum
+    // path from beginning to end
     int maxPathSum(int arr1[], int arr2[], int m, int n){
         int i=0, j=0;
         int result =0, sum1 = 0, sum2 =0;
+
         while(i<m && j<n){
+            // Add elements of ar1[] to sum1
             if(arr1[i] < arr2[j]){
                 sum1 += arr1[i++];
-            }else if(arr1[i] > arr2[j]){
+            }
+            // Add elements of ar2[] to sum2
+            else if(arr1[i] > arr2[j]){
                 sum2 += arr2[j++];
-            }else{
+            }
+            // we reached a common point
+            else{
                 // Take the maximum of two sums and add to
                 // result
                 // Also add the common element of array,
