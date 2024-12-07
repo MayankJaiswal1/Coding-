@@ -28,7 +28,7 @@ package Array;
 
 public class Stock_Buy_sell {
     public static void main(String[] args) {
-        int prices[] = {100, 180, 260, 310, 40, 535, 695};
+        int prices[] = {100, 180, 260, 310, 400, 535, 695, 555};
         System.out.println(maximumProfit(prices));
     }
 
