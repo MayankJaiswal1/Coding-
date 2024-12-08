@@ -20,7 +20,7 @@ package Array;
 public class pair_with_given_sum_in_an_array {
     public static void main(String[] args) {
         int arr[] = {0,-1,2,-3,1};
-        int target = -2;
+        int target = 0;
         if(twoSum(arr, target)){
             System.out.println("true");
         }else{
@@ -39,5 +39,5 @@ public class pair_with_given_sum_in_an_array {
         }
         return false;
     }
-    
+
 }
