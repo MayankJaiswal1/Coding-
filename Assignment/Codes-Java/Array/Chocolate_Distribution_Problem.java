@@ -23,7 +23,7 @@ import java.util.Arrays;
 public class Chocolate_Distribution_Problem {
     public static void main(String[] args) {
         int arr[] = {7,3,2,4,9,12,56};
-        int m = 3;
+        int m = 4;
         System.out.println(findMinDiff(arr, m));
     }
 
