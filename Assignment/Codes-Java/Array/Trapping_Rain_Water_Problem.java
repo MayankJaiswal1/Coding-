@@ -30,7 +30,7 @@ package Array;
 
 public class Trapping_Rain_Water_Problem {
     public static void main(String[] args) {
-        int arr[] = {2,1,5,3,1,0,4};
+        int arr[] = {2,1,5,3,1,0,4,2,4};
         System.out.println(maxWater(arr));
     }
 
