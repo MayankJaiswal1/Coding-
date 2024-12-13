@@ -28,6 +28,7 @@ public class Find_Missing_Positive_Number {
     public static void main(String[] args) {
         int arr[] = {2,-3,4,1,1,7};
         System.out.println(missingNumber(arr));
+        System.out.println(missingNumber_II(arr));
     }
 
     static int missingNumber(int arr[]){
@@ -41,5 +42,21 @@ public class Find_Missing_Positive_Number {
             }
         }
         return res;
+    }
+
+    static int missingNumber_II(int arr[]){
+        int n = arr.length;
+        boolean vis[] = new boolean[n];
+        for(int i=0; i<n; i++){
+            if(arr[i]>0 && arr[i]<=n){
+                vis[arr[i] - 1] = true;
+            }
+        }
+        for(int i=1; i<=n; i++){
+            if(!vis[i-1]){
+                return i;
+            }
+        }
+        return n+1;
     }
 }
