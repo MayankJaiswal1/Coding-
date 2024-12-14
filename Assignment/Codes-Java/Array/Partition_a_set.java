@@ -21,7 +21,7 @@ package Array;
 
 public class Partition_a_set {
     public static void main(String[] args) {
-        int arr[] = {1,5,11,5};
+        int arr[] = {1,5,11,5,4,7,8};
         if(equalPartition(arr)){
             System.out.println("True");
         }else{
