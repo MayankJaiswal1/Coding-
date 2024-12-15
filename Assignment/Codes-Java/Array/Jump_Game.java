@@ -22,7 +22,7 @@ package Array;
 
 public class Jump_Game {
     public static void main(String[] args) {
-        int arr[] = {1,3,5,8,9,2,6,7,6,8,9};
+        int arr[] = {1,2,4,3,5,78,8,9,8,7,100,2,6,7,6,8,9};
         System.out.println(minJumps(arr));
     }
 
