@@ -8,5 +8,8 @@ public class Even_ODD_no {
         }else{
             System.out.println(num + " is odd");
         }
+
+        String status = num % 2 == 0 ? "is Even" : " is Odd";
+        System.out.println(num + status);
     }
 }
