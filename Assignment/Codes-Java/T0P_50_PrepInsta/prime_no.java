@@ -11,7 +11,8 @@ public class prime_no {
         }
         if(count == 2){
             System.out.println(num + " is prime ");
+        }else{
+            System.out.println(num + " is composite");
         }
-        
     }
 }
