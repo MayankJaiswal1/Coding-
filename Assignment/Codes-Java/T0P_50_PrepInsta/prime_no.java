@@ -2,7 +2,7 @@ package T0P_50_PrepInsta;
 
 public class prime_no {
     public static void main(String[] args) {
-        int num = 11;
+        int num = 12;
         int count = 0;
         for(int i=1; i<=num; i++){
             if(num % i == 0){
