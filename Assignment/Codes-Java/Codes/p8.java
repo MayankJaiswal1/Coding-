@@ -1,14 +1,19 @@
-
 import java.util.*;
 
-class OneDArray{
+class ArrayDemo{
 	public static void main(String[] args){
-		int[] empId = new int[3];
-		empId[0] =10;
-		empId[1] =20;
-		empId[2] =30;
-		System.out.println(empId[0]);
-		System.out.println(empId[1]);
-		System.out.println(empId[2]);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size: ");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		//System.out.println(" Size of an array: "+arr.length);
+		for(int i=0; i<arr.length; i++){
+			System.out.print("Enter elements: ");
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("Array Elements are: ");
+		for(int i=0; i<arr.length; i++){
+			System.out.println(arr[i]);
+		}
 	}
 }
