@@ -1,18 +1,12 @@
-
-
-import java.util.*;
-
-class OneDArray{
+class TwoDArray{
 	public static void main(String[] args){
-		int empId[] = new int[]{110,120,130};
-		System.out.println(empId[0]);  // 
-		System.out.println(empId[1]);  //   
-		System.out.println(empId[2]);  //
-		empId[0] =10;
-		empId[1] =20;
-		empId[2] =30;
-		System.out.println(empId[0]);
-		System.out.println(empId[1]);
-		System.out.println(empId[2]);
+		int arr1[][] = {{10,20},{30,40}};
+		System.out.println(arr1[0][0]);
+		System.out.println(arr1[0][1]);
+		System.out.println(arr1[1][0]);
+		System.out.println(arr1[1][1]);
+		System.out.println(arr1[1][2]);
+		System.out.println(arr1[3][]);
+		System.out.println(arr1[2][0]);
 	}
 }
