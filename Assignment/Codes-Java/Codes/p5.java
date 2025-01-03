@@ -1,13 +1,7 @@
-import java.util.*;
-
-class OneDArray{
+class ArrayDemo{
 	public static void main(String[] args){
-		int empId = new int[3];
-		empId[0] =10;
-		empId[1] =20;
-		empId[2] =30;
-		System.out.println(empId[0]);
-		System.out.println(empId[1]);
-		System.out.println(empId[2]);
+		int arr[] = new int[]{};
+		arr[0] = 10; //assign the data
+		System.out.println(arr[0]); //access the data
 	}
 }
