@@ -1,10 +1,8 @@
-class JVMInternal{
+class String{
 	public static void main(String[] args){
-		int x = 10; 
-		int y = 10;
-		int z = 10;
-		System.out.println(System.identityHashCode(x));
-		System.out.println(System.identityHashCode(y));
-		System.out.println(System.identityHashCode(z));
+		String str1 = "Shashi";
+		System.out.print(str1);
+		char arr[] = new char[]{'a','b','c','d','e','f'};
+		System.out.print(arr);
 	}
 }
