@@ -1,17 +1,19 @@
-
-import java.util.*;
-
-class OneDArray{
+class StringDemo{
 	public static void main(String[] args){
-		int empId[] = {10,20,30,40,50};
-		System.out.println(empId[3]);  //40 
-		System.out.println(empId[4]);  //50   
-		System.out.println(empId[2]);  //30
-		/*empId[0] =10;
-		empId[1] =20;
-		empId[2] =30;
-		System.out.println(empId[0]);
-		System.out.println(empId[1]);
-		System.out.println(empId[2]);*/
+		String str1 = "Shashi";
+		System.out.println(str1);
+		System.out.println(System.identityHashCode(str1));
+		
+		String str2 = "Shashi Bagal"; 
+		System.out.println(str2);
+		System.out.println(System.identityHashCode(str2));
+
+		String str3 = new String("Shashi");
+		System.out.println(str3);
+		System.out.println(System.identityHashCode(str3));
+
+		String str4 = new String("Shashi");   
+		System.out.println(str4);
+		System.out.println(System.identityHashCode(str4));
 	}
 }
