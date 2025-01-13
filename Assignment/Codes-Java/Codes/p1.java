@@ -1,8 +1,16 @@
-class String{
-	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.print(str1);
-		char arr[] = new char[]{'a','b','c','d','e','f'};
-		System.out.print(arr);
+import java.io.*;
+
+class InputDemo{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter your name");
+		String name = br.readLine();
+		System.out.println("Enter society name");
+		String socName = br.readLine();
+		System.out.println("Enter wing name");
+		String wing = br.readLine();
+		System.out.println("Enter flatno.");
+		String flatNo = br.readLine();
 	}
 }
+
