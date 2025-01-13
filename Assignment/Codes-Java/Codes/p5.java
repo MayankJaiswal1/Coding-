@@ -1,10 +1,17 @@
-class CharDemo{
-	public static void main(String[] args){
-		
-		char arr4[] = new char[]{'1','2','3','4','5'};
-		System.out.println(arr4);
 
+import java.io.*;
+
+class InputDemo{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter your name");
+		String name = br.readLine();
+		System.out.println("Enter society name");
+		String socName = br.readLine();
+		System.out.println("Enter wing name");
+		char wing = br.readLine();
+		System.out.println("Enter flatno.");
+		int flatNo = Integer.parseInt(br.readLine());
 	}
 }
 
- 
