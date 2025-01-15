@@ -1,11 +1,25 @@
-class StringDemo{
-	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.println(str1);
-		System.out.println(System.identityHashCode(str1));
 
-		String str2 = new String("Shashi");
-		System.out.println(str2);
-		System.out.println(System.identityHashCode(str1));
+import java.io.*;
+
+class InputDemo{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter your name : ");
+		String name = br.readLine();
+		System.out.println("Enter society name :  ");
+		String socName = br.readLine();
+		//System.out.println("Enter flatno. : ");
+		//int flatNo = Integer.parseInt(br.readLine());
+		System.out.println("Enter wing name : ");
+		char wing = (char)br.read();
+		br.skip(1);
+
+		System.out.println("Enter flatno.");
+		String flatNo = br.readLine();
+
+		System.out.println("Enter your name " + name);
+		System.out.println("Enter society name " + socName);
+		System.out.println("Enter wing name " + wing);
+		System.out.println("Enter flatno. " + flatNo);
 	}
 }
