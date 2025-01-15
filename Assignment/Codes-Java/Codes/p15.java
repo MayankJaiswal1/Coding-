@@ -1,19 +1,21 @@
-class StringDemo{
+
+import java.util.*;
+
+class SingleLine{
 	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.println(str1);
-		System.out.println(System.identityHashCode(str1));
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter player info");
+		String info = sc.nextLine();
+
+		StringTokenizer st = new StringTokenizer(info," ");
+		String str1 = st.nextToken();
+		String str2 = st.nextToken();
+		String str3 = st.nextToken();
+		String str4 = st.nextToken();
 		
-		String str2 = "Shashi Bagal"; 
-		System.out.println(str2);
-		System.out.println(System.identityHashCode(str2));
-
-		String str3 = new String("Shashi");
-		System.out.println(str3);
-		System.out.println(System.identityHashCode(str3));
-
-		String str4 = new String("Shashi");   
-		System.out.println(str4);
-		System.out.println(System.identityHashCode(str4));
+		System.out.println("Player name: " + str1);
+		System.out.println("Jersey No.:  " + str2);
+		System.out.println("Average : "    + str3);
+		System.out.println("Grade : "      + str4);
 	}
 }
