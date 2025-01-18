@@ -1,23 +1,24 @@
+import java.util.*;
 
-import java.io.*;
-
-class InputDemo{
-	public static void main(String[] args)throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter your name : ");
-		String name = br.readLine();
-		System.out.println("Enter society name :  ");
-		String socName = br.readLine();
-		System.out.println("Enter flatno. : ");
-		int flatNo = Integer.parseInt(br.readLine());
-		System.out.println("Enter wing name : ");
-		char wing = (char)br.read();
-		//System.out.println("Enter flatno.");
-		//int flatNo = Integer.parseInt(br.readLine());
-
-		System.out.println("Enter your name " + name);
-		System.out.println("Enter society name " + socName);
-		System.out.println("Enter wing name " + wing);
-		System.out.println("Enter flatno. " + flatNo);
+class ArrayDemo{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size: ");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		//System.out.println(" Size of an array: "+arr.length);
+		for(int i=0; i<arr.length; i++){
+			System.out.print("Enter elements: ");
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("Array Elements are: ");
+		for(int i=0; i<arr.length; i++){
+			System.out.println(arr[i]);
+		}
+		int sum = 0;
+		for(int i =0; i<arr.length; i++){
+			sum = sum + arr[i];
+		}
+		System.out.println("Sum: "+sum);
 	}
 }
