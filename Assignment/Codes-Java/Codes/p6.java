@@ -1,16 +1,11 @@
+import java.util.*;
 
-import java.io.*;
-
-class InputDemo{
-	public static void main(String[] args)throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter your name");
-		String name = br.readLine();
-		System.out.println("Enter society name");
-		String socName = br.readLine();
-		System.out.println("Enter wing name");
-		char wing = (char)br.read();
-		//System.out.println("Enter flatno.");
-		//int flatNo = Integer.parseInt(br.readLine());
+class ArrayDemo{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter array size: ");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		System.out.println(" Size of an array: "+arr.length);
 	}
 }
