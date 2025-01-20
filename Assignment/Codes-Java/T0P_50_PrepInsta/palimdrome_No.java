@@ -23,5 +23,17 @@ public class palimdrome_No {
         }else{
             System.out.println(num + " is not Palimdrome");
         }
+
+        System.out.println(" ");
+
+        System.out.println(isPalimdrone("radar".toLowerCase()));
+        System.out.println(isPalimdrone("Naman".toLowerCase()));
+        System.out.println(isPalimdrone("12321".toLowerCase()));
+        System.out.println(isPalimdrone("12345".toLowerCase()));
+    }
+
+    private static boolean isPalimdrone(String string) {
+        String rev = new StringBuilder(string).reverse().toString();
+        return string.equals(rev);
     }
 }
