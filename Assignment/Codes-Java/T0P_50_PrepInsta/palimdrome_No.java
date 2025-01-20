@@ -30,6 +30,7 @@ public class palimdrome_No {
         System.out.println(isPalimdrone("Naman".toLowerCase()));
         System.out.println(isPalimdrone("12321".toLowerCase()));
         System.out.println(isPalimdrone("12345".toLowerCase()));
+        System.out.println(isPalimdrone("12321"));
     }
 
     private static boolean isPalimdrone(String string) {
