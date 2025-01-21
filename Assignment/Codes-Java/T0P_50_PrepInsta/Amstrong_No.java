@@ -23,6 +23,11 @@ Explanation: 371 = 3^3 + 7^3 + 1^3
 Therefore it's an Armstrong number.
  */
 
+ /*https://takeuforward.org/maths/check-if-a-number-is-armstrong-number-or-not/
+  * 
+  */
+
+  
 package T0P_50_PrepInsta;
 
 public class Amstrong_No {
@@ -35,13 +40,33 @@ public class Amstrong_No {
        }
     }
 
+    // Function to check if a
+    // number is an Armstrong number
     public static boolean isArmstrong(int num){
+
+        // Calculate the number of
+        // digits in the given number
         int k = String.valueOf(num).length();
+
+        // Initialize the sum of digits
+        // raised to the power of k to 0
         int sum = 0;
+
+        // Copy the value of the input
+        // number to a temporary variable n
         int n = num;
+
         while(n > 0){
+            // Extract the last
+            // digit of the number
             int ld = n % 10;
+
+            // Add the digit raised to
+            // the power of k to the sum
             sum += Math.pow(ld, k);
+
+            // Remove the last digit
+            // from the number
             n /= 10;
         }
         return sum == num ? true : false;
