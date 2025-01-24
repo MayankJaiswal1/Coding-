@@ -1,22 +1,15 @@
-import java.util.*;
-
-class SetMethods {
+class JVMInternal{
 	public static void main(String[] args){
-		Set ss = new LinkedHashSet();
-		ss.add(10);
-		ss.add(20);
-		ss.add(30);
-		ss.add(40);
-		ss.add(50);
-		
-		
-		/*lang.add("Cpp");
-		lang.add("React");
-		lang.add("Flutter");
-		lang.add("SpringBoot");
-		lang.add("Java");
-		lang.add("Python");
-		lang.add("Swift");*/
-		System.out.println(ss);
+		int x = 10; 
+		int y = 10;
+		int z = 10;
+		int a = 10;
+		int b = 20;
+
+		System.out.println(System.identityHashCode(x));
+		System.out.println(System.identityHashCode(y));
+		System.out.println(System.identityHashCode(z));
+		System.out.println(System.identityHashCode(a));
+		System.out.println(System.identityHashCode(b));
 	}
 }
