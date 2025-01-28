@@ -1,8 +1,5 @@
-class String{
+class ArrayDemo{
 	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.print(str1);
-		char arr[] = new char[]{'a','b','c','d','e','f'};
-		System.out.print(arr);
+		int arr[] = new int[5]{};
 	}
 }
