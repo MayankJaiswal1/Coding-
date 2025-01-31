@@ -1,10 +1,19 @@
-class TwoDArray{
+class StringDemo{
 	public static void main(String[] args){
-		int arr1[][] = new int[2][2];
-		/*arr1[0][0] = 10;
-		arr1[0][1] = 20;
-		arr1[1][0] = 30;
-		arr1[1][1] = 40;*/
-		System.out.println(arr1[2][0]);
+		String str1 = "Shashi";
+		System.out.println(str1);
+		System.out.println(System.identityHashCode(str1));
+		
+		String str2 = "Shashi"; 
+		System.out.println(str2);
+		System.out.println(System.identityHashCode(str2));
+
+		String str3 = new String("Shashi");
+		System.out.println(str3);
+		System.out.println(System.identityHashCode(str3));
+
+		String str4 = new String("Shashi");   
+		System.out.println(str4);
+		System.out.println(System.identityHashCode(str4));
 	}
 }
