@@ -1,10 +1,7 @@
-class CharDemo{
+class ArrayDemo{
 	public static void main(String[] args){
-		
-		char arr4[] = new char[]{'1','2','3','4','5'};
-		System.out.println(arr4);
-
+		int arr[] = new int[]{};
+		arr[0] = 10; //assign the data
+		System.out.println(arr[0]); //access the data
 	}
 }
-
- 
