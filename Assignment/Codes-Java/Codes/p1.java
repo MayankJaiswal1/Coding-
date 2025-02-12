@@ -1,10 +1,16 @@
-class JVMInternal{
-	public static void main(String[] args){
-		int x = 10; 
-		int y = 10;
-		int z = 10;
-		System.out.println(System.identityHashCode(x));
-		System.out.println(System.identityHashCode(y));
-		System.out.println(System.identityHashCode(z));
+import java.io.*;
+
+class InputDemo{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter your name");
+		String name = br.readLine();
+		System.out.println("Enter society name");
+		String socName = br.readLine();
+		System.out.println("Enter wing name");
+		String wing = br.readLine();
+		System.out.println("Enter flatno.");
+		String flatNo = br.readLine();
 	}
 }
+
