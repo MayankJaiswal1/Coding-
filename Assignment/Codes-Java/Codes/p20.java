@@ -1,12 +1,15 @@
-class TwoDArray{
+
+import java.util.*;
+
+class SingleLine{
 	public static void main(String[] args){
-		int arr1[][] = {{10,20},{30,40}};
-		System.out.println(arr1[0][0]);
-		System.out.println(arr1[0][1]);
-		System.out.println(arr1[1][0]);
-		System.out.println(arr1[1][1]);
-		System.out.println(arr1[1][2]);
-		System.out.println(arr1[3][]);
-		System.out.println(arr1[2][0]);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter player info");
+		String info = sc.nextLine();
+		
+		StringTokenizer st = new StringTokenizer(info,"@#");
+		while(st.hasMoreTokens()){
+			System.out.println(st.nextToken());
+		}
 	}
 }
