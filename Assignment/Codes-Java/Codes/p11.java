@@ -1,25 +1,12 @@
+import java.util.*;
 
-import java.io.*;
-
-class InputDemo{
-	public static void main(String[] args)throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter your name : ");
-		String name = br.readLine();
-		System.out.println("Enter society name :  ");
-		String socName = br.readLine();
-		//System.out.println("Enter flatno. : ");
-		//int flatNo = Integer.parseInt(br.readLine());
-		System.out.println("Enter wing name : ");
-		char wing = (char)br.read();
-		br.skip(1);
-
-		System.out.println("Enter flatno.");
-		String flatNo = br.readLine();
-
-		System.out.println("Enter your name " + name);
-		System.out.println("Enter society name " + socName);
-		System.out.println("Enter wing name " + wing);
-		System.out.println("Enter flatno. " + flatNo);
+class JaggedArray{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		System.out.println(x);
+		sc=null;
+		int y = sc.nextInt();
+		System.out.println(y);
 	}
 }
