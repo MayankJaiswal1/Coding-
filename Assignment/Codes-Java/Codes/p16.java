@@ -1,22 +1,15 @@
-
-
-import java.util.*;
-
-class SingleLine{
+class JaggedArray{
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter player info");
-		String info = sc.nextLine();
-
-		StringTokenizer st = new StringTokenizer(info,"");
-		String str1 = st.nextToken();
-		String str2 = st.nextToken();
-		String str3 = st.nextToken();
-		String str4 = st.nextToken();
-		
-		System.out.println("Player name: " + str1);
-		System.out.println("Jersey No.:  " + str2);
-		System.out.println("Average : "    + str3);
-		System.out.println("Grade : "      + str4);
+		int arr[][] = new int[2][];
+		arr[0] = new int[3];
+		arr[1] = new int[2];
+		/*for(int i=0; i<arr.length; i++){
+			for(int j=0; j<arr[i].length; j++){
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}*/
+		arr[1][2] = 50;
+		//System.out.println(arr)[1][2];
 	}
 }
