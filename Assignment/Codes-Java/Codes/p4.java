@@ -1,17 +1,17 @@
 
-class JVMInternal{
-	public static void main(String[] args){
-		char ch1 = 'A';  //65
-		char ch2 = 'a';  //97  
-		char ch3 = 'B';  //66
-		int x = 65;
-		int y = 97;
-		int z = 66;
-		System.out.println(System.identityHashCode(ch1));
-		System.out.println(System.identityHashCode(x));
-		System.out.println(System.identityHashCode(ch2));
-		System.out.println(System.identityHashCode(y));
-		System.out.println(System.identityHashCode(ch3));
-		System.out.println(System.identityHashCode(z));
+import java.io.*;
+
+class InputDemo{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter your name");
+		String name = br.readLine();
+		System.out.println("Enter society name");
+		String socName = br.readLine();
+		System.out.println("Enter wing name");
+		char wing = br.readLine();
+		System.out.println("Enter flatno.");
+		int flatNo = br.readLine();
 	}
 }
+
