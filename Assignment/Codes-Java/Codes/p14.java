@@ -1,15 +1,19 @@
-class JaggedArray{
+class StringDemo{
 	public static void main(String[] args){
-		int arr[][] = new int[2][];
-		arr[0] = new int[3];
-		arr[1] = new int[2];
-		for(int i=0; i<arr.length; i++){
-			for(int j=0; j<arr[i].length; j++){
-				System.out.print(arr[i][j] + " ");
-			}
-			System.out.println();
-		}
-		arr[1][2] = 50;
-		//System.out.println(arr[1][2]);
+		String str1 = "Shashi";
+		System.out.println(str1);
+		System.out.println(System.identityHashCode(str1));
+		
+		String str2 = "Shashi"; 
+		System.out.println(str2);
+		System.out.println(System.identityHashCode(str2));
+
+		String str3 = new String("Shashi");
+		System.out.println(str3);
+		System.out.println(System.identityHashCode(str3));
+
+		String str4 = new String("Shashi");   
+		System.out.println(str4);
+		System.out.println(System.identityHashCode(str4));
 	}
 }
