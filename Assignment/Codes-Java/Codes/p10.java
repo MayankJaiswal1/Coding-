@@ -1,6 +1,9 @@
-class JaggedArray{
+class StringDemo{
 	public static void main(String[] args){
-		int arr[][] = new int[2][];
-		arr[0][0] = 10;
+		String str1 = "Shashi";
+		System.out.println(str1);
+
+		String str2 = new String("Shashi");
+		System.out.println(str2);
 	}
 }
