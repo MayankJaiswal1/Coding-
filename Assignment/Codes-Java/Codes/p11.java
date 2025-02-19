@@ -1,12 +1,11 @@
-import java.util.*;
-
-class JaggedArray{
+class StringDemo{
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		int x = sc.nextInt();
-		System.out.println(x);
-		sc=null;
-		int y = sc.nextInt();
-		System.out.println(y);
+		String str1 = "Shashi";
+		System.out.println(str1);
+		System.out.println(System.identityHashCode(str1));
+
+		String str2 = new String("Shashi");
+		System.out.println(str2);
+		System.out.println(System.identityHashCode(str1));
 	}
 }
