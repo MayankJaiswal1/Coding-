@@ -1,20 +1,35 @@
-class CharDemo{
-	public static void main(String[] args){
-		int arr1[] = new int[]{10,20,30,40,50};
-		System.out.println(arr1);
-		
-		float arr2[] = new float[]{10,20,30,40,50};
-		System.out.println(arr2);
+import java.util.HashSet;
 
-		byte arr3[] = new byte[]{11,22,33,44,55};
-		System.out.println(arr3);
-		
-		char arr4[] = new char[]{'A','B','C','D','E'};
-		System.out.println(arr4);
+class HashSetDemo {
+    public static void main(String[] args) {
+        HashSet<String> set = new HashSet<>();
 
-	}
+        // Adding elements to the HashSet
+        set.add("Cpp");
+        set.add("React");
+        set.add("Flutter");
+        set.add("SpringBoot");
+        set.add("Java");
+        set.add("Python");
+        set.add("Swift");
+
+        // Printing the HashSet
+        System.out.println(set);
+
+        // Calculating hash codes and bucket indices for educational purposes
+        printHashDetails("Cpp");
+        printHashDetails("React");
+        printHashDetails("Flutter");
+        printHashDetails("SpringBoot");
+        printHashDetails("Java");
+        printHashDetails("Python");
+        printHashDetails("Swift");
+    }
+
+    public static void printHashDetails(String element) {
+        int hashCode = element.hashCode();
+        int bucketIndex = hashCode % 16; // Assuming table size is 16 for simplicity
+        System.out.println("Element: " + element + ", HashCode: " + hashCode + ", BucketIndex: " + bucketIndex);
+    }
 }
 
-/* 
- Here we have proof that String is internally Character Array
- */
