@@ -1,8 +1,22 @@
-class StringDemo{
+import java.util.*;
+
+class SetMethods {
 	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.println(str1);
-		char arr[] = new char[]{'a','b','c','d','e','f'};
-		System.out.println(arr);
+		Set ss = new LinkedHashSet();
+		ss.add(10);
+		ss.add(20);
+		ss.add(30);
+		ss.add(40);
+		ss.add(50);
+		
+		
+		/*lang.add("Cpp");
+		lang.add("React");
+		lang.add("Flutter");
+		lang.add("SpringBoot");
+		lang.add("Java");
+		lang.add("Python");
+		lang.add("Swift");*/
+		System.out.println(ss);
 	}
 }
