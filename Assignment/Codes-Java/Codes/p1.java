@@ -1,8 +1,15 @@
-class String{
+import java.util.*;
+
+class HashSetDemo {
 	public static void main(String[] args){
-		String str1 = "Shashi";
-		System.out.print(str1);
-		char arr[] = new char[]{'a','b','c','d','e','f'};
-		System.out.print(arr);
+		HashSet lang = new HashSet();
+		lang.add("Cpp");
+		lang.add("React");
+		lang.add("Flutter");
+		lang.add("SpringBoot");
+		lang.add("Java");
+		lang.add("Python");
+		lang.add("Swift");
+		System.out.println(lang);
 	}
 }
