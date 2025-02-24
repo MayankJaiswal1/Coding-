@@ -1,10 +1,8 @@
-class CharDemo{
-	public static void main(String[] args){
-		
-		char arr4[] = new char[]{'1','2','3','4','5'};
-		System.out.println(arr4);
 
+class OneDArray{
+	public static void main(String[] args){
+		int arr[] = new int[]{10,20,30,40,50};
+		System.out.println(arr[3]); //40
+		System.out.println(arr);    //[I@
 	}
 }
-
- 
