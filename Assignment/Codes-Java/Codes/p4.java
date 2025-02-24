@@ -1,18 +1,28 @@
-class CharDemo{
-	public static void main(String[] args){
-		int arr1[] = new int[]{10,20,30,40,50};
-		System.out.println(arr1);
-		
-		float arr2[] = new float[]{10,20,30,40,50};
-		System.out.println(arr2);
+import java.util.*;
 
-		byte arr3[] = new byte[]{11,22,33,44,55};
-		System.out.println(arr3);
-		
-		char arr4[] = new char[]{'A','B','C','D','E'};
-		System.out.println(arr4);
-		
-		System.out.println(arr4[2]);
+class TwoDArray{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size for rows and columns : ");
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+
+		int arr[][] = new int[rows][cols];
+		System.out.println("Enter array Elements: " );
+		for(int i=0; i<arr.length; i++){
+			for( int j=0; j<arr.length; j++){
+				arr[i][j] = sc.nextInt();
+			}
+		}
+		System.out.println(" Array Elements are: ");
+		for(int i=0; i<arr.length; i++){
+                        for( int j=0; j<arr.length; j++){
+                                System.out.print(arr[i][j] + " ");
+                        }
+			System.out.println();
+                }
+	       	System.out.println(arr[1][1]);  //50
+		System.out.println(arr[1]);     //[I@... 
+		System.out.println(arr);        //[[I@...  
 	}
 }
- 
