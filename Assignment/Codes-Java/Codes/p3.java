@@ -1,35 +1,25 @@
-import java.util.HashSet;
+import java.util.*;
 
-class HashSetDemo {
-    public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
+class OneInput{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size for rows and columns : ");
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
 
-        // Adding elements to the HashSet
-        set.add("Cpp");
-        set.add("React");
-        set.add("Flutter");
-        set.add("SpringBoot");
-        set.add("Java");
-        set.add("Python");
-        set.add("Swift");
-
-        // Printing the HashSet
-        System.out.println(set);
-
-        // Calculating hash codes and bucket indices for educational purposes
-        printHashDetails("Cpp");
-        printHashDetails("React");
-        printHashDetails("Flutter");
-        printHashDetails("SpringBoot");
-        printHashDetails("Java");
-        printHashDetails("Python");
-        printHashDetails("Swift");
-    }
-
-    public static void printHashDetails(String element) {
-        int hashCode = element.hashCode();
-        int bucketIndex = hashCode % 16; // Assuming table size is 16 for simplicity
-        System.out.println("Element: " + element + ", HashCode: " + hashCode + ", BucketIndex: " + bucketIndex);
-    }
+		int arr[][] = new int[rows][cols];
+		System.out.println("Enter array Elements: " );
+		for(int i=0; i<arr.length; i++){
+			for( int j=0; j<arr.length; j++){
+				arr[i][j] = sc.nextInt();
+			}
+		}
+		System.out.println(" Array Elements are: ");
+		for(int i=0; i<arr.length; i++){
+                        for( int j=0; j<arr.length; j++){
+                                System.out.print(arr[i][j] + " ");
+                        }
+			System.out.println();
+                } 
+	}
 }
-
