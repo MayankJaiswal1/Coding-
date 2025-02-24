@@ -1,15 +1,18 @@
 import java.util.*;
 
-class HashSetDemo {
+class OneInput{
 	public static void main(String[] args){
-		HashSet lang = new HashSet();
-		lang.add("Cpp");
-		lang.add("React");
-		lang.add("Flutter");
-		lang.add("SpringBoot");
-		lang.add("Java");
-		lang.add("Python");
-		lang.add("Swift");
-		System.out.println(lang);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size");
+		int arrSize = sc.nextInt();
+
+		int arr[] = new int[arrSize];
+		System.out.println("Enter Elements: " );
+		for(int i=0; i<arr.length; i++){
+			arr[i] = sc.nextInt();
+		}
+		for(int i=0; i<arr.length; i++){
+			System.out.println(arr[i]);
+		}
 	}
 }
