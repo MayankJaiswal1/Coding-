@@ -1,22 +1,18 @@
-import java.util.*;
+import java.io.*;
 
-class SetMethods {
-	public static void main(String[] args){
-		Set ss = new LinkedHashSet();
-		ss.add(10);
-		ss.add(20);
-		ss.add(30);
-		ss.add(40);
-		ss.add(50);
-		
-		
-		/*lang.add("Cpp");
-		lang.add("React");
-		lang.add("Flutter");
-		lang.add("SpringBoot");
-		lang.add("Java");
-		lang.add("Python");
-		lang.add("Swift");*/
-		System.out.println(ss);
+class OneInput{
+	public static void main(String[] args)throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter array size");
+		int arrSize = Integer.parseInt(br.readLine());
+
+		int arr[] = new int[arrSize];
+		System.out.println("Enter Elements: " );
+		for(int i=0; i<arr.length; i++){
+			arr[i] = Integer.parseInt(br.readLine());
+		}
+		for(int i=0; i<arr.length; i++){
+			System.out.println(arr[i]);
+		}
 	}
 }
