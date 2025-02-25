@@ -1,15 +1,9 @@
-class CharDemo{
+class ThreeDArray{
 	public static void main(String[] args){
-		
-		char arr4[] = new char[]{10,20,30,40,50};
-		System.out.println(arr4);
-
+		float arr[][][] = new float[2][3][3];
+		System.out.println(arr[1][1][1]); //0
+		System.out.println(arr[1][1]);    //[F@
+		System.out.println(arr[1]);       //[[F@
+		System.out.println(arr);          //[[[F@
 	}
 }
-
-/*
- output - (
- value of 40-(
-
- rest are non printable values
-*/ 
