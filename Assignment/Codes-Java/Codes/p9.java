@@ -1,18 +1,8 @@
-
-class StringDemo{
+class TwoDArray{
 	public static void main(String[] args){
-		
-		//way1
-		String str1 = "Shashi";
-		System.out.println(str1);
-
-		//way2
-		char arr[] = new char[]{'a','s','h','i','s','h'};
-		System.out.println(arr);
-
-		//way3
-		String str2 = new String("Core2Web");
-		System.out.println(str2);
-
+		int arr3[][] = new int[3][3];        //JAggedarray
+		int arr1[][] = new int[][]{{10,20,30},{40,50,60}};
+		int arr2[][] = new int[][]{{110,120,130},{140,150}};
+		System.out.println(arr2[1][2]);  //
 	}
 }
