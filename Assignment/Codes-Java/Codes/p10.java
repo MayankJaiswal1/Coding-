@@ -1,6 +1,5 @@
-class JaggedArray{
+class TwoDArray{
 	public static void main(String[] args){
-		int arr[][] = new int[2][];
-		arr[0][0] = 10;
+		int arr1[][] = new int[][];
 	}
 }
